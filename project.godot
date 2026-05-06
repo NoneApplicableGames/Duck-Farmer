@@ -14,7 +14,7 @@ config/name="Duck Farmer"
 config/tags=PackedStringArray("project")
 run/main_scene="uid://0kl3am0yki0j"
 config/features=PackedStringArray("4.6", "Forward Plus")
-config/icon="res://icon.svg"
+config/icon="uid://dcc2q4dccg4lc"
 
 [file_customization]
 
@@ -71,4 +71,5 @@ Run={
 
 [rendering]
 
+textures/canvas_textures/default_texture_filter=0
 rendering_device/driver.windows="d3d12"

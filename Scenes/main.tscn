@@ -1,3 +1,18 @@
 [gd_scene format=3 uid="uid://0kl3am0yki0j"]
 
+[ext_resource type="PackedScene" uid="uid://cli6um741umo5" path="res://Scenes/Levels/farm_house.tscn" id="1_bo1nx"]
+[ext_resource type="PackedScene" uid="uid://dt55hebwdlkl0" path="res://Scenes/player_character.tscn" id="1_jjgbg"]
+[ext_resource type="PackedScene" uid="uid://cw8h86e47fenm" path="res://Scenes/water_mark.tscn" id="3_8gbba"]
+
 [node name="Main" type="Node2D" unique_id=575048488]
+
+[node name="Farm House" parent="." unique_id=640924386 instance=ExtResource("1_bo1nx")]
+
+[node name="PlayerCharacter" parent="." unique_id=182670116 instance=ExtResource("1_jjgbg")]
+position = Vector2(571, 333)
+
+[node name="WaterMark" parent="." unique_id=930443363 instance=ExtResource("3_8gbba")]
+offset_left = 716.0
+offset_top = 507.0
+offset_right = 716.0
+offset_bottom = 507.0
