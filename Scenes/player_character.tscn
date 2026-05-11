@@ -1,11 +1,13 @@
 [gd_scene format=3 uid="uid://dt55hebwdlkl0"]
 
+[ext_resource type="Script" uid="uid://cvmxovaqbxh2v" path="res://Scripts/character_controller.gd" id="1_cmdk4"]
 [ext_resource type="SpriteFrames" uid="uid://bscv3s2vn5qtt" path="res://Resources/Sprite_Frames/Player_Sprite_Frames.tres" id="1_qcwfp"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_cmdk4"]
 size = Vector2(16, 16)
 
 [node name="PlayerCharacter" type="CharacterBody2D" unique_id=182670116]
+script = ExtResource("1_cmdk4")
 
 [node name="SpriteHandle" type="AnimatedSprite2D" parent="." unique_id=335533956]
 sprite_frames = ExtResource("1_qcwfp")

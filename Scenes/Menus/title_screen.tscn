@@ -1,0 +1,55 @@
+[gd_scene format=3 uid="uid://das6ynf80w84c"]
+
+[ext_resource type="Theme" uid="uid://louyewpos6lu" path="res://Resources/UI_Themes/Title_Screen_UI.tres" id="1_klylv"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_klylv"]
+font_size = 70
+
+[node name="TitleScreen" type="Control" unique_id=301549888]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_vertical = 8
+theme = ExtResource("1_klylv")
+
+[node name="Label" type="Label" parent="." unique_id=1252621153]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -544.0
+offset_top = 88.0
+offset_right = -109.0
+offset_bottom = 184.0
+grow_horizontal = 0
+text = "Duck Farmer"
+label_settings = SubResource("LabelSettings_klylv")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=455465118]
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -336.0
+offset_top = 148.0
+offset_right = 2.0
+offset_bottom = 306.0
+grow_horizontal = 0
+grow_vertical = 2
+
+[node name="StartGameButton" type="Button" parent="VBoxContainer" unique_id=914580899]
+layout_mode = 2
+text = "Start Game"
+
+[node name="SettingsButton" type="Button" parent="VBoxContainer" unique_id=177353700]
+layout_mode = 2
+text = "Settings"
+
+[node name="QuitButton" type="Button" parent="VBoxContainer" unique_id=1282861517]
+layout_mode = 2
+text = "Quit Game"
