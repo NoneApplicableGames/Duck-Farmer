@@ -8,6 +8,8 @@ size = Vector2(16, 16)
 
 [node name="PlayerCharacter" type="CharacterBody2D" unique_id=182670116]
 script = ExtResource("1_cmdk4")
+walk_speed = 100.0
+run_speed = 1.0
 
 [node name="SpriteHandle" type="AnimatedSprite2D" parent="." unique_id=335533956]
 sprite_frames = ExtResource("1_qcwfp")

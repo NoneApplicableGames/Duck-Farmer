@@ -8,10 +8,12 @@ class_name CharacterController
 @export var run_speed : float = 0.0
 
 
-func _process(delta: float) -> void:
+func _physics_process(delta: float) -> void:
 	var move_direction : Vector2
 	move_direction.x = Input.get_axis("Move_Left","Move_Right")
 	move_direction.y = Input.get_axis("Move_Up","Move_Down")
 	
-	var move_vector := move_direction * walk_speed * delta
-	pass
+	
+	self.velocity= move_direction * walk_speed
+	move_and_slide()
+	
