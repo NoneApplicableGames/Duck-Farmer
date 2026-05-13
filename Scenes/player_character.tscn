@@ -1,7 +1,8 @@
 [gd_scene format=3 uid="uid://dt55hebwdlkl0"]
 
-[ext_resource type="Script" uid="uid://cvmxovaqbxh2v" path="res://Scripts/character_controller.gd" id="1_cmdk4"]
+[ext_resource type="Script" uid="uid://cvmxovaqbxh2v" path="res://Scripts/Player Scripts/character_controller.gd" id="1_cmdk4"]
 [ext_resource type="SpriteFrames" uid="uid://bscv3s2vn5qtt" path="res://Resources/Sprite_Frames/Player_Sprite_Frames.tres" id="1_qcwfp"]
+[ext_resource type="Script" uid="uid://bhjb8c5gaf8k1" path="res://Scripts/Player Scripts/player_animation_handler.gd" id="3_o0f8b"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_cmdk4"]
 size = Vector2(16, 16)
@@ -9,11 +10,13 @@ size = Vector2(16, 16)
 [node name="PlayerCharacter" type="CharacterBody2D" unique_id=182670116]
 script = ExtResource("1_cmdk4")
 walk_speed = 100.0
-run_speed = 1.0
+run_speed = 200.0
 
 [node name="SpriteHandle" type="AnimatedSprite2D" parent="." unique_id=335533956]
 sprite_frames = ExtResource("1_qcwfp")
-animation = &"Idle_Chicken"
+animation = &"Walk_Water_Can"
+frame_progress = 0.6901484
+script = ExtResource("3_o0f8b")
 
 [node name="CollisionHull" type="CollisionShape2D" parent="." unique_id=1660090290]
 shape = SubResource("RectangleShape2D_cmdk4")

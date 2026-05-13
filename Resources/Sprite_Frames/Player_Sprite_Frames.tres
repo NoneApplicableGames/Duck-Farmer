@@ -14,6 +14,10 @@ region = Rect2(0, 16, 16, 16)
 atlas = ExtResource("1_iwrfd")
 region = Rect2(0, 112, 16, 16)
 
+[sub_resource type="AtlasTexture" id="AtlasTexture_i28xl"]
+atlas = ExtResource("1_iwrfd")
+region = Rect2(90, 16, 30, 16)
+
 [sub_resource type="AtlasTexture" id="AtlasTexture_6jasm"]
 atlas = ExtResource("1_iwrfd")
 region = Rect2(0, 80, 16, 16)
@@ -50,6 +54,18 @@ region = Rect2(32, 112, 16, 16)
 atlas = ExtResource("1_iwrfd")
 region = Rect2(64, 112, 16, 16)
 
+[sub_resource type="AtlasTexture" id="AtlasTexture_jkm4l"]
+atlas = ExtResource("1_iwrfd")
+region = Rect2(93, 16, 31, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_sio88"]
+atlas = ExtResource("1_iwrfd")
+region = Rect2(124, 16, 31, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_uqnui"]
+atlas = ExtResource("1_iwrfd")
+region = Rect2(155, 16, 31, 16)
+
 [resource]
 animations = [{
 "frames": [{
@@ -74,6 +90,29 @@ animations = [{
 }],
 "loop": true,
 "name": &"Idle_Goose",
+"speed": 5.0
+}, {
+"frames": [],
+"loop": true,
+"name": &"Idle_Rake",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_i28xl")
+}],
+"loop": true,
+"name": &"Idle_Water_Can",
+"speed": 5.0
+}, {
+"frames": [],
+"loop": true,
+"name": &"Use_Rake",
+"speed": 5.0
+}, {
+"frames": [],
+"loop": true,
+"name": &"Use_Water_Can",
 "speed": 5.0
 }, {
 "frames": [{
@@ -116,5 +155,19 @@ animations = [{
 }],
 "loop": true,
 "name": &"Walk_Goose",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jkm4l")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_sio88")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_uqnui")
+}],
+"loop": true,
+"name": &"Walk_Water_Can",
 "speed": 5.0
 }]
