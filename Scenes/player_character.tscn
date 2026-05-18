@@ -12,11 +12,13 @@ script = ExtResource("1_cmdk4")
 walk_speed = 100.0
 run_speed = 200.0
 
-[node name="SpriteHandle" type="AnimatedSprite2D" parent="." unique_id=335533956]
+[node name="PlayerSpriteHandle" type="AnimatedSprite2D" parent="." unique_id=335533956]
+unique_name_in_owner = true
 sprite_frames = ExtResource("1_qcwfp")
-animation = &"Walk_Water_Can"
-frame_progress = 0.6901484
+animation = &"Idle_Goose"
 script = ExtResource("3_o0f8b")
 
 [node name="CollisionHull" type="CollisionShape2D" parent="." unique_id=1660090290]
 shape = SubResource("RectangleShape2D_cmdk4")
+
+[connection signal="animation_state_changed" from="." to="PlayerSpriteHandle" method="_change_animation_state"]
