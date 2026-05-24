@@ -65,7 +65,6 @@ func change_animation_state(move_direction : Vector2):
 	
 	else:
 		current_animation_state = PLAYER_ANIMATION_STATES.IDLE_EMPTY
-		
 	
 	if move_direction == Vector2.LEFT:
 		%PlayerSpriteHandle.flip_h = true

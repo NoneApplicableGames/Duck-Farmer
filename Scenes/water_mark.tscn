@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://cw8h86e47fenm"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_tk07b"]
+font_size = 18
 
 [node name="WaterMark" type="Control" unique_id=930443363]
 layout_mode = 3

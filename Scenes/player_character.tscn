@@ -15,7 +15,8 @@ run_speed = 200.0
 [node name="PlayerSpriteHandle" type="AnimatedSprite2D" parent="." unique_id=335533956]
 unique_name_in_owner = true
 sprite_frames = ExtResource("1_qcwfp")
-animation = &"Idle_Goose"
+animation = &"Idle_Water_Can"
+frame_progress = 0.4944213
 script = ExtResource("3_o0f8b")
 
 [node name="CollisionHull" type="CollisionShape2D" parent="." unique_id=1660090290]
