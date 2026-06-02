@@ -1,0 +1,10 @@
+[gd_scene format=3 uid="uid://cxjwwifu5p7ib"]
+
+[ext_resource type="PackedScene" uid="uid://bg4lavu73bmuc" path="res://Scenes/UI/hud_UI.tscn" id="1_7jyxg"]
+[ext_resource type="PackedScene" uid="uid://cw8h86e47fenm" path="res://Scenes/water_mark.tscn" id="2_24j7v"]
+
+[node name="UILayers" type="CanvasLayer" unique_id=1151801287]
+
+[node name="HUD" parent="." unique_id=1741543565 instance=ExtResource("1_7jyxg")]
+
+[node name="WaterMark" parent="." unique_id=930443363 instance=ExtResource("2_24j7v")]

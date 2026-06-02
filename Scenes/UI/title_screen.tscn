@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://das6ynf80w84c"]
 
 [ext_resource type="Theme" uid="uid://louyewpos6lu" path="res://Resources/UI_Themes/Title_Screen_UI.tres" id="1_klylv"]
+[ext_resource type="Script" uid="uid://b8xuu0jpfnsdd" path="res://Scripts/Menus/title_screen.gd" id="2_dnytt"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_klylv"]
 font_size = 70
@@ -14,6 +15,7 @@ grow_horizontal = 2
 grow_vertical = 2
 size_flags_vertical = 8
 theme = ExtResource("1_klylv")
+script = ExtResource("2_dnytt")
 
 [node name="Label" type="Label" parent="." unique_id=1252621153]
 layout_mode = 1
@@ -53,3 +55,5 @@ text = "Settings"
 [node name="QuitButton" type="Button" parent="VBoxContainer" unique_id=1282861517]
 layout_mode = 2
 text = "Quit Game"
+
+[connection signal="pressed" from="VBoxContainer/StartGameButton" to="." method="_on_start_game_button_pressed"]

@@ -4,3 +4,9 @@ class_name main
 extends Node2D
 
 signal change_game_scene(new_scene : PackedScene)
+
+@export_category("Menus")
+
+@export_category("Levels")
+
+@export_category("Actors")

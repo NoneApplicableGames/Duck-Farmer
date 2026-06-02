@@ -40,12 +40,18 @@ func _ready() -> void:
 
 func _physics_process(delta: float) -> void:
 	
-	# Allows the player to move omnidirectionally without needing multiple cases for 8/4 directional movement.
+	#According to scope movment needs to be locked to 4 directions. 
 	var move_direction : Vector2
-	move_direction.x = Input.get_axis("Move_Left","Move_Right")
-	move_direction.y = Input.get_axis("Move_Up","Move_Down")
 	
-	move_direction = move_direction.normalized()
+	if Input.is_action_pressed("Move_Down"):
+		move_direction = Vector2.DOWN
+	elif Input.is_action_pressed("Move_Up"):
+		move_direction = Vector2.UP
+	elif Input.is_action_pressed("Move_Left"):
+		move_direction= Vector2.LEFT
+	elif Input.is_action_pressed("Move_Right"):
+		move_direction = Vector2.RIGHT
+	
 	
 	#Running has no cooldown like in a PkMn game. No stamina system needed.
 	if Input.is_action_pressed("Run"):
