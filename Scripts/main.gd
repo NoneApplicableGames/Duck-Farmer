@@ -5,6 +5,9 @@ extends Node2D
 
 enum GAME_STATES {START_MENU, DEBUG_LEVEL}
 
+@export_category("Game State")
+@export var current_game_state : GAME_STATES = GAME_STATES.START_MENU
+
 signal change_game_scene(new_scene : PackedScene)
 signal change_game_state(new_state : GAME_STATES)
 
@@ -19,3 +22,5 @@ var farm_house := preload("res://Scenes/Levels/farm_house.tscn").instantiate()
 
 func _ready() -> void:
 	%UILayer.add_child(start_menu)
+	var _start_menu := get_node("start_menu")
+	print(get_tree_string())
