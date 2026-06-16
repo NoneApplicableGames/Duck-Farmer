@@ -31,6 +31,11 @@ folder_colors={
 "res://Sprites/": "blue"
 }
 
+[global_group]
+
+main=""
+scene="For any scene that might be instanced and deleted by the main script"
+
 [input]
 
 Move_Up={

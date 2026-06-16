@@ -2,7 +2,7 @@
 
 [ext_resource type="TileSet" uid="uid://coa66g2hh46e2" path="res://Resources/Tilesets/Map_Tile_Set.tres" id="1_vk21b"]
 
-[node name="Farm House" type="Node2D" unique_id=640924386]
+[node name="Farm House" type="Node2D" unique_id=640924386 groups=["scene"]]
 z_index = -1
 
 [node name="Parallax2D" type="Parallax2D" parent="." unique_id=461940469]

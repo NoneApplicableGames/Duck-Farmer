@@ -3,12 +3,11 @@
 class_name main
 extends Node2D
 
-enum GAME_STATES {START_MENU, DEBUG_LEVEL}
+enum GAME_STATES {START_MENU, SETTINGS_MENU, DEBUG_LEVEL}
 
 @export_category("Game State")
 @export var current_game_state : GAME_STATES = GAME_STATES.START_MENU
 
-signal change_game_scene(new_scene : PackedScene)
 signal change_game_state(new_state : GAME_STATES)
 
 # game scenes
@@ -22,5 +21,22 @@ var farm_house := preload("res://Scenes/Levels/farm_house.tscn").instantiate()
 
 func _ready() -> void:
 	%UILayer.add_child(start_menu)
-	var _start_menu := get_node("start_menu")
-	print(get_tree_string())
+	start_menu.change_game_scene.connect(_load_new_scene)
+
+#function to delete the currently loaded menu/level and spawn the new level depending on the current game state.
+func _load_new_scene(new_scene : GAME_STATES):
+	
+	#find the currently loaded menu and kill it
+	var current_scene := get_tree().get_first_node_in_group("scene")
+	current_scene.queue_free()
+	
+	#work out what scene needs to be loaded next
+	#add the new scene as a child of main if level, add as child of canvasLayer if Menu/UI element
+	match new_scene:
+		GAME_STATES.START_MENU:
+			%UILayer.add_child(start_menu)
+		GAME_STATES.SETTINGS_MENU:
+			%UILayer. add_child(settings_menu)
+		GAME_STATES.DEBUG_LEVEL:
+			self.add_child(debug_level)
+	

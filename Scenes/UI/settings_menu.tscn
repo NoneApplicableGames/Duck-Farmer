@@ -3,7 +3,7 @@
 [sub_resource type="LabelSettings" id="LabelSettings_7cjo8"]
 font_size = 31
 
-[node name="SettingsMenu" type="Control" unique_id=1170193351]
+[node name="SettingsMenu" type="Control" unique_id=1170193351 groups=["scene"]]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
