@@ -1,5 +1,7 @@
 [gd_scene format=3 uid="uid://cdjlu4yewdiyy"]
 
+[ext_resource type="Script" uid="uid://kmm1rnvy3buu" path="res://Scripts/Menus/settings_menu.gd" id="1_kfh4b"]
+
 [sub_resource type="LabelSettings" id="LabelSettings_7cjo8"]
 font_size = 31
 
@@ -12,6 +14,7 @@ grow_horizontal = 2
 grow_vertical = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
+script = ExtResource("1_kfh4b")
 
 [node name="HeaderLabel" type="Label" parent="." unique_id=885882296]
 layout_mode = 1
@@ -124,3 +127,15 @@ text = "Move Right"
 
 [node name="Button" type="Button" parent="ControlConfigContainer/HBoxContainer4" unique_id=1869013148]
 layout_mode = 2
+
+[node name="BackButton" type="Button" parent="." unique_id=597584651]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_top = -48.0
+offset_right = 128.0
+grow_vertical = 0
+text = "Back"
+
+[connection signal="pressed" from="BackButton" to="." method="_on_back_button_pressed"]
