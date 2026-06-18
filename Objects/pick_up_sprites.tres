@@ -1,0 +1,50 @@
+[gd_resource type="SpriteFrames" format=3 uid="uid://5slr7ud154xh"]
+
+[ext_resource type="Texture2D" uid="uid://bc4pnby23twc" path="res://Sprites/Objects/chicken food spritedoc.png" id="1_47cyp"]
+[ext_resource type="Texture2D" uid="uid://d0g1hgnjpuf26" path="res://Sprites/Objects/egg spritedoc.png" id="2_mekvv"]
+[ext_resource type="Texture2D" uid="uid://dce262ex4fdf7" path="res://Sprites/Objects/goose food spritedoc.png" id="3_mvw86"]
+[ext_resource type="Texture2D" uid="uid://cs5bnh8w30fmb" path="res://Sprites/Objects/rake spritedoc.png" id="4_mi1v6"]
+[ext_resource type="Texture2D" uid="uid://ca7gv1m65ojfb" path="res://Sprites/Objects/Watering can sprite doc.png" id="5_b6xer"]
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_47cyp")
+}],
+"loop": true,
+"name": &"Chicken_Feed",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_mekvv")
+}],
+"loop": true,
+"name": &"Egg",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_mvw86")
+}],
+"loop": true,
+"name": &"Goose_Feed",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("4_mi1v6")
+}],
+"loop": true,
+"name": &"Rake",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("5_b6xer")
+}],
+"loop": true,
+"name": &"Watering_Can",
+"speed": 5.0
+}]

@@ -1,9 +1,0 @@
-[gd_scene format=3 uid="uid://0kl3am0yki0j"]
-
-[ext_resource type="Script" uid="uid://c4vlmyfbkccbx" path="res://Scripts/main.gd" id="1_kry3j"]
-
-[node name="Main" type="Node2D" unique_id=575048488]
-script = ExtResource("1_kry3j")
-
-[node name="UILayer" type="CanvasLayer" parent="." unique_id=1735311626]
-unique_name_in_owner = true

@@ -1,0 +1,141 @@
+[gd_scene format=3 uid="uid://cdjlu4yewdiyy"]
+
+[ext_resource type="Script" uid="uid://kmm1rnvy3buu" path="res://UI/Menus/settings_menu.gd" id="1_kfh4b"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_7cjo8"]
+font_size = 31
+
+[node name="SettingsMenu" type="Control" unique_id=1170193351 groups=["scene"]]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+script = ExtResource("1_kfh4b")
+
+[node name="HeaderLabel" type="Label" parent="." unique_id=885882296]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_bottom = 48.0
+grow_horizontal = 2
+text = "Settings"
+label_settings = SubResource("LabelSettings_7cjo8")
+horizontal_alignment = 1
+
+[node name="SoundConfig Container" type="VBoxContainer" parent="." unique_id=1468450140]
+layout_mode = 1
+anchors_preset = 14
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_top = -148.0
+offset_bottom = -68.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="SoundConfig Container" unique_id=1781114096]
+layout_mode = 2
+text = "Volume"
+
+[node name="HBoxContainer5" type="HBoxContainer" parent="SoundConfig Container" unique_id=253724626]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="SoundConfig Container/HBoxContainer5" unique_id=1490544058]
+layout_mode = 2
+text = "Master Volume"
+
+[node name="HSlider" type="HSlider" parent="SoundConfig Container/HBoxContainer5" unique_id=224711476]
+layout_mode = 2
+tooltip_text = "Adjust the overall volume of the game."
+
+[node name="HBoxContainer6" type="HBoxContainer" parent="SoundConfig Container" unique_id=284271775]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="SoundConfig Container/HBoxContainer6" unique_id=1735381179]
+layout_mode = 2
+text = "Music Volume"
+
+[node name="HSlider" type="HSlider" parent="SoundConfig Container/HBoxContainer6" unique_id=1794841571]
+layout_mode = 2
+size_flags_horizontal = 8
+tooltip_text = "Adjust how loud the music is."
+
+[node name="HBoxContainer7" type="HBoxContainer" parent="SoundConfig Container" unique_id=378069388]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="SoundConfig Container/HBoxContainer7" unique_id=757055626]
+layout_mode = 2
+text = "SFX Volume"
+
+[node name="HSlider" type="HSlider" parent="SoundConfig Container/HBoxContainer7" unique_id=1132722695]
+layout_mode = 2
+
+[node name="ControlConfigContainer" type="VBoxContainer" parent="." unique_id=1688349482]
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -360.0
+grow_horizontal = 2
+grow_vertical = 0
+
+[node name="Label" type="Label" parent="ControlConfigContainer" unique_id=1851809655]
+layout_mode = 2
+text = "Controls"
+
+[node name="HBoxContainer" type="HBoxContainer" parent="ControlConfigContainer" unique_id=272349993]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="ControlConfigContainer/HBoxContainer" unique_id=1655721947]
+layout_mode = 2
+text = "Move Up"
+
+[node name="Button" type="Button" parent="ControlConfigContainer/HBoxContainer" unique_id=1313494895]
+layout_mode = 2
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="ControlConfigContainer" unique_id=1309553570]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="ControlConfigContainer/HBoxContainer2" unique_id=151392646]
+layout_mode = 2
+text = "Move Down"
+
+[node name="Button" type="Button" parent="ControlConfigContainer/HBoxContainer2" unique_id=1606775101]
+layout_mode = 2
+
+[node name="HBoxContainer3" type="HBoxContainer" parent="ControlConfigContainer" unique_id=812017454]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="ControlConfigContainer/HBoxContainer3" unique_id=1874641472]
+layout_mode = 2
+text = "Move Left"
+
+[node name="Button" type="Button" parent="ControlConfigContainer/HBoxContainer3" unique_id=385114352]
+layout_mode = 2
+
+[node name="HBoxContainer4" type="HBoxContainer" parent="ControlConfigContainer" unique_id=1446696452]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="ControlConfigContainer/HBoxContainer4" unique_id=1860416027]
+layout_mode = 2
+text = "Move Right"
+
+[node name="Button" type="Button" parent="ControlConfigContainer/HBoxContainer4" unique_id=1869013148]
+layout_mode = 2
+
+[node name="BackButton" type="Button" parent="." unique_id=597584651]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_top = -48.0
+offset_right = 128.0
+grow_vertical = 0
+text = "Back"
+
+[connection signal="pressed" from="BackButton" to="." method="_on_back_button_pressed"]

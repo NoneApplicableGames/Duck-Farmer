@@ -1,0 +1,38 @@
+[gd_scene format=3 uid="uid://bg4lavu73bmuc"]
+
+[ext_resource type="Theme" uid="uid://bplq63mrjmkdv" path="res://UI/UI_Themes/hud_ui_theme.tres" id="1_ny26j"]
+[ext_resource type="LabelSettings" uid="uid://0dvn63kri6wt" path="res://UI/UI_Themes/HUD_label.tres" id="1_sprlj"]
+
+[node name="HUD" type="Control" unique_id=1741543565]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("1_ny26j")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=315752007]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_bottom = 64.0
+grow_horizontal = 2
+theme = ExtResource("1_ny26j")
+color = Color(0.17254902, 0.17254902, 0.17254902, 0.5176471)
+
+[node name="Timer" type="ProgressBar" parent="." unique_id=350454385]
+layout_mode = 0
+offset_left = 192.0
+offset_top = 16.0
+offset_right = 1120.0
+offset_bottom = 43.0
+
+[node name="Label" type="Label" parent="." unique_id=1072561876]
+layout_mode = 0
+offset_left = 16.0
+offset_top = 16.0
+offset_right = 160.0
+offset_bottom = 40.0
+text = "Time Remaining:"
+label_settings = ExtResource("1_sprlj")
