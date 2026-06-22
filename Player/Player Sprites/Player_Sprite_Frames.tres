@@ -92,7 +92,7 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_iwrfd")
 }],
-"loop": true,
+"loop": 1,
 "name": &"Idle_Chicken",
 "speed": 5.0
 }, {
@@ -100,7 +100,7 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_euo3u")
 }],
-"loop": true,
+"loop": 1,
 "name": &"Idle_Empty",
 "speed": 5.0
 }, {
@@ -108,7 +108,7 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_83n0f")
 }],
-"loop": true,
+"loop": 1,
 "name": &"Idle_Goose",
 "speed": 5.0
 }, {
@@ -116,7 +116,7 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_w0m41")
 }],
-"loop": true,
+"loop": 1,
 "name": &"Idle_Rake",
 "speed": 5.0
 }, {
@@ -124,12 +124,12 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_i28xl")
 }],
-"loop": true,
+"loop": 1,
 "name": &"Idle_Water_Can",
 "speed": 5.0
 }, {
 "frames": [],
-"loop": true,
+"loop": 1,
 "name": &"Use_Rake",
 "speed": 5.0
 }, {
@@ -137,7 +137,7 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_np5uk")
 }],
-"loop": true,
+"loop": 1,
 "name": &"Use_Water_Can",
 "speed": 5.0
 }, {
@@ -151,7 +151,7 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_3q8a7")
 }],
-"loop": true,
+"loop": 1,
 "name": &"Walk Rake",
 "speed": 5.0
 }, {
@@ -165,7 +165,7 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_1rkrr")
 }],
-"loop": true,
+"loop": 1,
 "name": &"Walk_Chicken",
 "speed": 5.0
 }, {
@@ -179,7 +179,7 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_ionb2")
 }],
-"loop": true,
+"loop": 1,
 "name": &"Walk_Empty",
 "speed": 5.0
 }, {
@@ -193,7 +193,7 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_dhpbr")
 }],
-"loop": true,
+"loop": 1,
 "name": &"Walk_Goose",
 "speed": 5.0
 }, {
@@ -207,7 +207,7 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_uqnui")
 }],
-"loop": true,
+"loop": 1,
 "name": &"Walk_Water_Can",
 "speed": 5.0
 }]

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dhv11e5eb2tpj"
-path="res://.godot/imported/bees spritedoct.png-238da761d0bbedf69ca639e27d954cf5.ctex"
+uid="uid://d0g1hgnjpuf26"
+path="res://.godot/imported/egg spritedoc.png-fab8055892a53b50461dea5e1bffa4f2.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/Characters/bees spritedoct.png"
-dest_files=["res://.godot/imported/bees spritedoct.png-238da761d0bbedf69ca639e27d954cf5.ctex"]
+source_file="res://Objects/Pickups/egg spritedoc.png"
+dest_files=["res://.godot/imported/egg spritedoc.png-fab8055892a53b50461dea5e1bffa4f2.ctex"]
 
 [params]
 

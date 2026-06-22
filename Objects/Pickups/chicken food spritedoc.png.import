@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ca7gv1m65ojfb"
-path="res://.godot/imported/Watering can sprite doc.png-68e52023e7647b7c923b0f8417c8ab19.ctex"
+uid="uid://bc4pnby23twc"
+path="res://.godot/imported/chicken food spritedoc.png-056dec6a9b8929a53dfd730074f1ef81.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/Objects/Watering can sprite doc.png"
-dest_files=["res://.godot/imported/Watering can sprite doc.png-68e52023e7647b7c923b0f8417c8ab19.ctex"]
+source_file="res://Objects/Pickups/chicken food spritedoc.png"
+dest_files=["res://.godot/imported/chicken food spritedoc.png-056dec6a9b8929a53dfd730074f1ef81.ctex"]
 
 [params]
 

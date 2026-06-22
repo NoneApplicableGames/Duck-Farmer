@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cs5bnh8w30fmb"
-path="res://.godot/imported/rake spritedoc.png-a61c50911e16c5e315eabf2e39505a01.ctex"
+uid="uid://dwtpvvihtk3mq"
+path="res://.godot/imported/empty sugar cup sprite doc.png-4a91a0a0a99e339c6c3dc3eb56839159.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/Objects/rake spritedoc.png"
-dest_files=["res://.godot/imported/rake spritedoc.png-a61c50911e16c5e315eabf2e39505a01.ctex"]
+source_file="res://Objects/Pickups/empty sugar cup sprite doc.png"
+dest_files=["res://.godot/imported/empty sugar cup sprite doc.png-4a91a0a0a99e339c6c3dc3eb56839159.ctex"]
 
 [params]
 

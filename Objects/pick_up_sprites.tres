@@ -1,10 +1,10 @@
 [gd_resource type="SpriteFrames" format=3 uid="uid://5slr7ud154xh"]
 
-[ext_resource type="Texture2D" uid="uid://bc4pnby23twc" path="res://Sprites/Objects/chicken food spritedoc.png" id="1_47cyp"]
-[ext_resource type="Texture2D" uid="uid://d0g1hgnjpuf26" path="res://Sprites/Objects/egg spritedoc.png" id="2_mekvv"]
-[ext_resource type="Texture2D" uid="uid://dce262ex4fdf7" path="res://Sprites/Objects/goose food spritedoc.png" id="3_mvw86"]
-[ext_resource type="Texture2D" uid="uid://cs5bnh8w30fmb" path="res://Sprites/Objects/rake spritedoc.png" id="4_mi1v6"]
-[ext_resource type="Texture2D" uid="uid://ca7gv1m65ojfb" path="res://Sprites/Objects/Watering can sprite doc.png" id="5_b6xer"]
+[ext_resource type="Texture2D" uid="uid://bc4pnby23twc" path="res://Objects/Pickups/chicken food spritedoc.png" id="1_47cyp"]
+[ext_resource type="Texture2D" uid="uid://d0g1hgnjpuf26" path="res://Objects/Pickups/egg spritedoc.png" id="2_mekvv"]
+[ext_resource type="Texture2D" uid="uid://dce262ex4fdf7" path="res://Objects/Pickups/goose food spritedoc.png" id="3_mvw86"]
+[ext_resource type="Texture2D" uid="uid://cs5bnh8w30fmb" path="res://Objects/Pickups/rake spritedoc.png" id="4_mi1v6"]
+[ext_resource type="Texture2D" uid="uid://ca7gv1m65ojfb" path="res://Objects/Pickups/Watering can sprite doc.png" id="5_b6xer"]
 
 [resource]
 animations = [{

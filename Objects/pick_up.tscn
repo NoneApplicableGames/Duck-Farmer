@@ -1,16 +1,19 @@
 [gd_scene format=3 uid="uid://buhnc3mnhrc43"]
 
+[ext_resource type="Script" uid="uid://mqdhnro2l66b" path="res://Objects/pick_up.gd" id="1_d7he4"]
 [ext_resource type="SpriteFrames" uid="uid://5slr7ud154xh" path="res://Objects/pick_up_sprites.tres" id="1_lxp1s"]
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_lxp1s"]
+[ext_resource type="Shape2D" uid="uid://cuo4fouuu1d2g" path="res://Objects/Pickup Hitbox.tres" id="3_wlw05"]
 
 [node name="PickUp" type="Area2D" unique_id=949997948 groups=["pickup"]]
+script = ExtResource("1_d7he4")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=574008919]
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1722605843]
+[node name="SpriteHandle" type="AnimatedSprite2D" parent="." unique_id=1722605843]
 sprite_frames = ExtResource("1_lxp1s")
 animation = &"Watering_Can"
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1998562478]
-shape = SubResource("RectangleShape2D_lxp1s")
+[node name="CollisonShape" type="CollisionShape2D" parent="." unique_id=1998562478]
+shape = ExtResource("3_wlw05")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

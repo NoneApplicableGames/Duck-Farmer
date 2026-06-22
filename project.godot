@@ -13,7 +13,7 @@ config_version=5
 config/name="Duck Farmer"
 config/tags=PackedStringArray("project")
 run/main_scene="uid://0kl3am0yki0j"
-config/features=PackedStringArray("4.6", "Forward Plus")
+config/features=PackedStringArray("4.7", "Forward Plus")
 config/icon="uid://dcc2q4dccg4lc"
 
 [display]
@@ -23,6 +23,7 @@ window/size/resizable=false
 [file_customization]
 
 folder_colors={
+"res://Characters/": "orange",
 "res://Levels/": "red",
 "res://Main Game/": "green",
 "res://Objects/": "pink",

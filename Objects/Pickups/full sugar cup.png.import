@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://d0g1hgnjpuf26"
-path="res://.godot/imported/egg spritedoc.png-60754c5e261be54b2c49fa056760038e.ctex"
+uid="uid://32qdta5wknwv"
+path="res://.godot/imported/full sugar cup.png-0152470e61d569dd2ca64caeaee27467.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/Objects/egg spritedoc.png"
-dest_files=["res://.godot/imported/egg spritedoc.png-60754c5e261be54b2c49fa056760038e.ctex"]
+source_file="res://Objects/Pickups/full sugar cup.png"
+dest_files=["res://.godot/imported/full sugar cup.png-0152470e61d569dd2ca64caeaee27467.ctex"]
 
 [params]
 

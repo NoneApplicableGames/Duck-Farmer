@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bc4pnby23twc"
-path="res://.godot/imported/chicken food spritedoc.png-521cf5f58ed470ab2104b86f6302051f.ctex"
+uid="uid://cbgwkf2ca0vd6"
+path="res://.godot/imported/fox spritedoc.png-8d66b23b4385714901b3ef0a053f54b4.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/Objects/chicken food spritedoc.png"
-dest_files=["res://.godot/imported/chicken food spritedoc.png-521cf5f58ed470ab2104b86f6302051f.ctex"]
+source_file="res://Characters/fox spritedoc.png"
+dest_files=["res://.godot/imported/fox spritedoc.png-8d66b23b4385714901b3ef0a053f54b4.ctex"]
 
 [params]
 

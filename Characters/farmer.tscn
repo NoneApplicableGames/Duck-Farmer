@@ -1,0 +1,3 @@
+[gd_scene format=3 uid="uid://vy7a0sm3wcqa"]
+
+[node name="Farmer" type="CharacterBody2D" unique_id=1838028253]

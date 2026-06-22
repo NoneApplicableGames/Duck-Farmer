@@ -1,0 +1,3 @@
+[gd_scene format=3 uid="uid://dqghrn5f843u1"]
+
+[node name="Fox" type="CharacterBody2D" unique_id=952105456]

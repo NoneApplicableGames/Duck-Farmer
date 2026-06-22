@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cbgwkf2ca0vd6"
-path="res://.godot/imported/fox spritedoc.png-74c35283c85a767c6a182521a24755e0.ctex"
+uid="uid://dce262ex4fdf7"
+path="res://.godot/imported/goose food spritedoc.png-2891c93c8955375d89dd34f02dcb409f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/Characters/fox spritedoc.png"
-dest_files=["res://.godot/imported/fox spritedoc.png-74c35283c85a767c6a182521a24755e0.ctex"]
+source_file="res://Objects/Pickups/goose food spritedoc.png"
+dest_files=["res://.godot/imported/goose food spritedoc.png-2891c93c8955375d89dd34f02dcb409f.ctex"]
 
 [params]
 

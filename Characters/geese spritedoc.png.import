@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dmxjwaob2lk15"
-path="res://.godot/imported/geese spritedoc.png-892bcf4b69bed7b7f69c03669b3977f7.ctex"
+path="res://.godot/imported/geese spritedoc.png-e2223ac4dc0492180784fc00296ccae6.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/Characters/geese spritedoc.png"
-dest_files=["res://.godot/imported/geese spritedoc.png-892bcf4b69bed7b7f69c03669b3977f7.ctex"]
+source_file="res://Characters/geese spritedoc.png"
+dest_files=["res://.godot/imported/geese spritedoc.png-e2223ac4dc0492180784fc00296ccae6.ctex"]
 
 [params]
 

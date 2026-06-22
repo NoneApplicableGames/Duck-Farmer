@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dce262ex4fdf7"
-path="res://.godot/imported/goose food spritedoc.png-d2b7cef1b955fff992b95f79e6510884.ctex"
+uid="uid://dhv11e5eb2tpj"
+path="res://.godot/imported/bees spritedoct.png-26e861af40767ec890e92012249deb5d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/Objects/goose food spritedoc.png"
-dest_files=["res://.godot/imported/goose food spritedoc.png-d2b7cef1b955fff992b95f79e6510884.ctex"]
+source_file="res://Characters/bees spritedoct.png"
+dest_files=["res://.godot/imported/bees spritedoct.png-26e861af40767ec890e92012249deb5d.ctex"]
 
 [params]
 

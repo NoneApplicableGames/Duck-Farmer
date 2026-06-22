@@ -2,6 +2,8 @@
 
 [ext_resource type="TileSet" uid="uid://coa66g2hh46e2" path="res://Levels/Tilesets/Map_Tile_Set.tres" id="1_vk21b"]
 [ext_resource type="PackedScene" uid="uid://dt55hebwdlkl0" path="res://Player/player_character.tscn" id="2_37w6k"]
+[ext_resource type="Script" uid="uid://mqdhnro2l66b" path="res://Objects/pick_up.gd" id="3_ww6fq"]
+[ext_resource type="PackedScene" uid="uid://buhnc3mnhrc43" path="res://Objects/pick_up.tscn" id="4_65113"]
 
 [node name="Farm House" type="Node2D" unique_id=640924386 groups=["scene"]]
 z_index = -1
@@ -18,3 +20,11 @@ zoom = Vector2(4, 4)
 
 [node name="PlayerCharacter" parent="." unique_id=182670116 instance=ExtResource("2_37w6k")]
 position = Vector2(368, 256)
+
+[node name="PickUp" parent="." unique_id=949997948 instance=ExtResource("4_65113")]
+position = Vector2(424, 256)
+current_state = 4
+
+[node name="PickUp2" type="Area2D" parent="." unique_id=742560923]
+script = ExtResource("3_ww6fq")
+metadata/_custom_type_script = "uid://mqdhnro2l66b"

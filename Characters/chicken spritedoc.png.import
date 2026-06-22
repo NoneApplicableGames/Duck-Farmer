@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dwtpvvihtk3mq"
-path="res://.godot/imported/empty sugar cup sprite doc.png-67c24d7fc45341ab428ef781bc491617.ctex"
+uid="uid://c7knq5jknneag"
+path="res://.godot/imported/chicken spritedoc.png-f7b2bd9f8fb697fa11e448ee112d81d6.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/Objects/empty sugar cup sprite doc.png"
-dest_files=["res://.godot/imported/empty sugar cup sprite doc.png-67c24d7fc45341ab428ef781bc491617.ctex"]
+source_file="res://Characters/chicken spritedoc.png"
+dest_files=["res://.godot/imported/chicken spritedoc.png-f7b2bd9f8fb697fa11e448ee112d81d6.ctex"]
 
 [params]
 
