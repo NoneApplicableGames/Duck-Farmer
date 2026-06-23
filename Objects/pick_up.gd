@@ -14,6 +14,7 @@ var player
 
 func _ready() -> void:
 	player = get_tree().get_first_node_in_group("player")
+	player.gameplay_state_changed.connect(_pick_up_item)
 	
 	match current_state:
 		PICKUP_TYPES.CHICKEN:
@@ -34,4 +35,6 @@ func _on_body_entered(body: Node2D) -> void:
 	if body == player:
 		print ("Player has touched pickup")
 		
-		
+
+func _pick_up_item() -> void:
+	pass

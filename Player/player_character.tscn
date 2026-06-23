@@ -4,6 +4,7 @@
 [ext_resource type="SpriteFrames" uid="uid://bscv3s2vn5qtt" path="res://Player/Player Sprites/Player_Sprite_Frames.tres" id="1_qcwfp"]
 [ext_resource type="Script" uid="uid://bhjb8c5gaf8k1" path="res://Player/Player Scripts/player_animation_handler.gd" id="3_o0f8b"]
 [ext_resource type="SpriteFrames" uid="uid://chcouv3tf4d7r" path="res://Button Prompts/button_prompts.tres" id="4_5vbj4"]
+[ext_resource type="Script" uid="uid://srji0axonemc" path="res://Player/player_button_prompt.gd" id="5_qyuka"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_cmdk4"]
 size = Vector2(16, 16)
@@ -26,5 +27,7 @@ shape = SubResource("RectangleShape2D_cmdk4")
 [node name="ButtonPrompt" type="AnimatedSprite2D" parent="." unique_id=1074211044]
 position = Vector2(0, -16)
 sprite_frames = ExtResource("4_5vbj4")
+animation = &"space_bar"
+script = ExtResource("5_qyuka")
 
 [connection signal="animation_state_changed" from="." to="PlayerSpriteHandle" method="_change_animation_state"]

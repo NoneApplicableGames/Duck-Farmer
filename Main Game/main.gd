@@ -22,8 +22,7 @@ var field := preload("res://Levels/field.tscn").instantiate()
 var yard := preload("res://Levels/yard.tscn").instantiate()
 
 func _ready() -> void:
-	%UILayer.add_child(start_menu)
-	start_menu.change_game_state.connect(_load_new_scene)
+	_load_new_scene(current_game_state)
 
 #function to delete the currently loaded menu/level and spawn the new level depending on the current game state.
 func _load_new_scene(new_scene : GAME_STATES):
