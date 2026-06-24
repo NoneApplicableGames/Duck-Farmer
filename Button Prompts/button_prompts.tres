@@ -1,8 +1,26 @@
 [gd_resource type="SpriteFrames" format=3 uid="uid://chcouv3tf4d7r"]
 
+[ext_resource type="Texture2D" uid="uid://tistjrtadr05" path="res://Button Prompts/Tilemap/tilemap.png" id="1_piobh"]
+[ext_resource type="Texture2D" uid="uid://osdayacx4377" path="res://Button Prompts/Space Bar.png" id="1_vgo7c"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pru4k"]
+atlas = ExtResource("1_piobh")
+region = Rect2(68, 0, 17, 17)
+
 [resource]
 animations = [{
-"frames": [],
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pru4k")
+}],
+"loop": 1,
+"name": &"a_button",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_vgo7c")
+}],
 "loop": 1,
 "name": &"space_bar",
 "speed": 5.0

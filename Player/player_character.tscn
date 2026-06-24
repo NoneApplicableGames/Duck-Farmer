@@ -24,8 +24,8 @@ script = ExtResource("3_o0f8b")
 [node name="CollisionHull" type="CollisionShape2D" parent="." unique_id=1660090290]
 shape = SubResource("RectangleShape2D_cmdk4")
 
-[node name="ButtonPrompt" type="AnimatedSprite2D" parent="." unique_id=1074211044]
-position = Vector2(0, -16)
+[node name="ButtonPrompt" type="AnimatedSprite2D" parent="." unique_id=1074211044 groups=["button_prompt"]]
+position = Vector2(0, -24)
 sprite_frames = ExtResource("4_5vbj4")
 animation = &"space_bar"
 script = ExtResource("5_qyuka")

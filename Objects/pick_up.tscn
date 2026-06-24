@@ -6,6 +6,7 @@
 
 [node name="PickUp" type="Area2D" unique_id=949997948 groups=["pickup"]]
 script = ExtResource("1_d7he4")
+current_state = null
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=574008919]
 
@@ -17,3 +18,4 @@ animation = &"Watering_Can"
 shape = ExtResource("3_wlw05")
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="body_exited" from="." to="." method="_on_body_exited"]

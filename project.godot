@@ -38,6 +38,7 @@ folder_colors={
 main=""
 scene="For any scene that might be instanced and deleted by the main script"
 player="group for player character only"
+button_prompt=""
 
 [input]
 

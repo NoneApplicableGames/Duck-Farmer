@@ -78,3 +78,8 @@ func change_animation_state(move_direction : Vector2):
 		%PlayerSpriteHandle.flip_h = false
 	
 	animation_state_changed.emit(current_animation_state)
+
+
+
+func pick_up_item() -> void:
+	pass
