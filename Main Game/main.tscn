@@ -1,9 +1,13 @@
 [gd_scene format=3 uid="uid://0kl3am0yki0j"]
 
 [ext_resource type="Script" uid="uid://c4vlmyfbkccbx" path="res://Main Game/main.gd" id="1_kry3j"]
+[ext_resource type="PackedScene" uid="uid://bos0vkmm3affy" path="res://UI/Debug_UI.tscn" id="2_mbbgn"]
 
 [node name="Main" type="Node2D" unique_id=575048488 groups=["main"]]
 script = ExtResource("1_kry3j")
 
 [node name="UILayer" type="CanvasLayer" parent="." unique_id=1735311626]
+unique_name_in_owner = true
+
+[node name="DebugUI" parent="UILayer" unique_id=90372675 instance=ExtResource("2_mbbgn")]
 unique_name_in_owner = true

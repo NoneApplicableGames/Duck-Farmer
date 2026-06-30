@@ -42,15 +42,16 @@ func _on_body_exited(body: Node2D) -> void:
 
 
 func _pick_up_item() -> void:
+	
 	if not player_character:
 		return
-		
-	# 1. Keep track of what is CURRENTLY on the ground before we change anything
+	
+	#Keep track of what is CURRENTLY on the ground before we change anything
 	var item_on_ground = current_pickup_type
 	var player_state = player_character.current_gameplay_state
 	var empty_state = CharacterController.PLAYER_GAMEPLAY_STATES.EMPTY
 	
-	# 2. Update the ground item to what the player was holding (if they were holding something)
+	# Update the ground item to what the player was holding (if they were holding something)
 	if player_state != empty_state:
 		match player_state:
 			CharacterController.PLAYER_GAMEPLAY_STATES.CHICKEN:
@@ -67,7 +68,7 @@ func _pick_up_item() -> void:
 		# Visual update to show the ground item has successfully changed
 		change_animation() 
 		
-	# 3. Give the player the item that WAS on the ground (using our cached variable)
+	#Give the player the item that WAS on the ground (using our cached variable)
 	match item_on_ground:
 		PICKUP_TYPES.CHICKEN:
 			player_character.current_gameplay_state = CharacterController.PLAYER_GAMEPLAY_STATES.CHICKEN
@@ -84,7 +85,7 @@ func _pick_up_item() -> void:
 	picked_up.emit()
 	change_character_state.emit(player_character.current_gameplay_state)
  
-	# 4. If player's hands were empty, the item is gone. 
+	#If player's hands were empty, the item is gone. 
 	# If they weren't empty, the item stays on the ground as the newly swapped item.
 	if player_state == empty_state:
 		if player_button_prompt:

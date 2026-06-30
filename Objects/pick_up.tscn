@@ -2,14 +2,54 @@
 
 [ext_resource type="Script" uid="uid://mqdhnro2l66b" path="res://Objects/pick_up.gd" id="1_d7he4"]
 [ext_resource type="SpriteFrames" uid="uid://5slr7ud154xh" path="res://Objects/pick_up_sprites.tres" id="1_lxp1s"]
+[ext_resource type="Script" uid="uid://bxkbvqa3ahrhq" path="res://Objects/pickup_animation_player.gd" id="2_wlw05"]
+
+[sub_resource type="Animation" id="Animation_wlw05"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("SpriteHandle:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_d7he4"]
+resource_name = "item_bob"
+length = 4.0333333
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("SpriteHandle:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1, 2, 3, 4),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(0, 0), Vector2(0, 4), Vector2(0, 0), Vector2(0, -4), Vector2(0, 0)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_wlw05"]
+_data = {
+&"RESET": SubResource("Animation_wlw05"),
+&"item_bob": SubResource("Animation_d7he4")
+}
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_wlw05"]
 
 [node name="PickUp" type="Area2D" unique_id=949997948 groups=["pickup"]]
 script = ExtResource("1_d7he4")
-current_pickup_type = null
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=574008919]
+libraries/ = SubResource("AnimationLibrary_wlw05")
+script = ExtResource("2_wlw05")
 
 [node name="SpriteHandle" type="AnimatedSprite2D" parent="." unique_id=1722605843]
 sprite_frames = ExtResource("1_lxp1s")

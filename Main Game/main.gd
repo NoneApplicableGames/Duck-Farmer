@@ -24,6 +24,15 @@ var watermark := preload("res://UI/water_mark.tscn").instantiate()
 
 func _ready() -> void:
 	_load_new_scene(current_game_state)
+	%DebugUI.hide()
+
+func _unhandled_input(event: InputEvent) -> void:
+	if Input.is_action_just_pressed("Open_Debug_Menu"):
+		match %DebugUI.visible:
+			true:
+				%DebugUI.hide()
+			false:
+				%DebugUI.show()
 
 #function to delete the currently loaded menu/level and spawn the new level depending on the current game state.
 func _load_new_scene(new_scene : GAME_STATES):
