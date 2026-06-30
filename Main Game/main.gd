@@ -20,13 +20,14 @@ var player := preload("res://Player/player_character.tscn").instantiate()
 var farm_house := preload("res://Levels/farm_house.tscn").instantiate()
 var field := preload("res://Levels/field.tscn").instantiate()
 var yard := preload("res://Levels/yard.tscn").instantiate()
+var watermark := preload("res://UI/water_mark.tscn").instantiate()
 
 func _ready() -> void:
 	_load_new_scene(current_game_state)
 
 #function to delete the currently loaded menu/level and spawn the new level depending on the current game state.
 func _load_new_scene(new_scene : GAME_STATES):
-	print(new_scene)
+	#print(new_scene)
 	#find the currently loaded menu and removes it as a child
 	#we dont queue free since that doesnt allow us to add it back later
 	var current_scene = get_tree().get_first_node_in_group("scene")
@@ -43,5 +44,6 @@ func _load_new_scene(new_scene : GAME_STATES):
 			settings_menu.change_game_state.connect(_load_new_scene)
 		GAME_STATES.DEBUG_LEVEL:
 			self.add_child(debug_level)
+			%UILayer.add_child(watermark)
 	
 	

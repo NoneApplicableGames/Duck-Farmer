@@ -6,7 +6,7 @@ class_name CharacterController
 
 #states for state machine have been seperated out between animations and gameplay state as there are different numbers for both.
 enum PLAYER_ANIMATION_STATES {IDLE_EMPTY, WALK_EMPTY, IDLE_CHICKEN, WALK_CHICKEN, IDLE_GOOSE, WALK_GOOSE, IDLE_WATER_CAN, WALK_WATER_CAN, IDLE_RAKE, WALK_RAKE}
-enum PLAYER_GAMEPLAY_STATES {EMPTY, CHICKEN, GOOSE, WATER_CAN, RAKE}
+enum PLAYER_GAMEPLAY_STATES {EMPTY, CHICKEN, GOOSE, WATER_CAN, RAKE, EGG}
 
 #To notifty other objects if state has changed.
 #Arguement should ideally pass the new state to whatever the signal is connected to.
@@ -32,6 +32,7 @@ signal gameplay_state_changed(new_state: PLAYER_GAMEPLAY_STATES)
 
 var current_animation_state : int
 var current_gameplay_state : int
+var move_direction : Vector2
 
 func _ready() -> void:
 
@@ -41,7 +42,6 @@ func _ready() -> void:
 func _physics_process(delta: float) -> void:
 	
 	#According to scope movment needs to be locked to 4 directions. 
-	var move_direction : Vector2
 	
 	if Input.is_action_pressed("Move_Down"):
 		move_direction = Vector2.DOWN
@@ -51,7 +51,8 @@ func _physics_process(delta: float) -> void:
 		move_direction= Vector2.LEFT
 	elif Input.is_action_pressed("Move_Right"):
 		move_direction = Vector2.RIGHT
-	
+	else:
+		move_direction = Vector2.ZERO
 	
 	#Running has no cooldown like in a PkMn game. No stamina system needed.
 	if Input.is_action_pressed("Run"):
@@ -66,11 +67,35 @@ func _physics_process(delta: float) -> void:
 
 func change_animation_state(move_direction : Vector2):
 	
-	if move_direction != Vector2.ZERO:
-		current_animation_state = PLAYER_ANIMATION_STATES.WALK_EMPTY
+	if move_direction == Vector2.ZERO:
+		match current_gameplay_state:
+			PLAYER_GAMEPLAY_STATES.EMPTY:
+				current_animation_state = PLAYER_ANIMATION_STATES.IDLE_EMPTY
+			PLAYER_GAMEPLAY_STATES.CHICKEN:
+				current_animation_state = PLAYER_ANIMATION_STATES.IDLE_CHICKEN
+			PLAYER_GAMEPLAY_STATES.GOOSE:
+				current_animation_state = PLAYER_ANIMATION_STATES.IDLE_GOOSE
+			PLAYER_GAMEPLAY_STATES.WATER_CAN:
+				current_animation_state = PLAYER_ANIMATION_STATES.IDLE_WATER_CAN
+			PLAYER_GAMEPLAY_STATES.RAKE:
+				current_animation_state = PLAYER_ANIMATION_STATES.IDLE_RAKE
+			_:
+				current_animation_state = PLAYER_ANIMATION_STATES.IDLE_EMPTY
 	
 	else:
-		current_animation_state = PLAYER_ANIMATION_STATES.IDLE_EMPTY
+		match current_gameplay_state:
+			PLAYER_GAMEPLAY_STATES.EMPTY:
+				current_animation_state = PLAYER_ANIMATION_STATES.WALK_EMPTY
+			PLAYER_GAMEPLAY_STATES.CHICKEN:
+				current_animation_state = PLAYER_ANIMATION_STATES.WALK_CHICKEN
+			PLAYER_GAMEPLAY_STATES.GOOSE:
+				current_animation_state = PLAYER_ANIMATION_STATES.WALK_GOOSE
+			PLAYER_GAMEPLAY_STATES.WATER_CAN:
+				current_animation_state = PLAYER_ANIMATION_STATES.WALK_WATER_CAN
+			PLAYER_GAMEPLAY_STATES.RAKE:
+				current_animation_state = PLAYER_ANIMATION_STATES.WALK_RAKE
+			_:
+					current_animation_state = PLAYER_ANIMATION_STATES.WALK_EMPTY
 	
 	if move_direction == Vector2.LEFT:
 		%PlayerSpriteHandle.flip_h = true
@@ -78,8 +103,3 @@ func change_animation_state(move_direction : Vector2):
 		%PlayerSpriteHandle.flip_h = false
 	
 	animation_state_changed.emit(current_animation_state)
-
-
-
-func pick_up_item() -> void:
-	pass
